@@ -1,0 +1,29 @@
+CREATE TABLE authentication (
+    username VARCHAR(255) PRIMARY KEY,
+    password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE inventory (
+    item_id INT AUTO_INCREMENT PRIMARY KEY,
+    item_name VARCHAR(255) NOT NULL,
+    quantity INT NOT NULL,
+    cost FLOAT NOT NULL,
+    username VARCHAR(255) NOT NULL
+    );
+
+
+modify table inventory FOREIGN  KEY (username) REFERENCES authentication(username);
+
+
+select * from inventory;
+
+drop table authendication;
+drop table inventory;
+
+drop inventory;
+show tables;
+
+delete from inventory where item_id=16;
+
+
+
