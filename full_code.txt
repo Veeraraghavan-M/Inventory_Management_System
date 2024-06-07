@@ -24,7 +24,7 @@ class LoginWindow(QWidget):
         super().__init__()
         self.setWindowTitle('Login')
         self.setGeometry(500, 300, 800, 500)
-        self.set_background_image('cat.jpg')
+        self.set_background_image('bg.png')
         self.setWindowIcon(QIcon('login_icon.jpg'))  # Set window icon
 
         self.db = db
@@ -118,7 +118,7 @@ class DashboardWindow(QWidget):
         super().__init__()
         self.setWindowTitle('Dashboard')
         self.setGeometry(500, 300, 900, 500)
-        self.set_background_image('dashboard_bg.jpg')
+        self.set_background_image('bg.png')
         self.setWindowIcon(QIcon('dashboard_icon.jpg'))  # Set window icon
 
         self.db = db
@@ -143,7 +143,7 @@ class DashboardWindow(QWidget):
         # Set font style for QTextEdit
         font = QFont("Brush Script MT", 16)  # Change the font family and size as desired
         self.info_text.setFont(font)
-        self.info_text.setStyleSheet("background-color: rgba(255, 255, 255, 0); color: white; color: black;")  # 0 alpha for transparency
+        self.info_text.setStyleSheet("background-color: rgba(255, 255, 255, 0); color: white; color: white;")  # 0 alpha for transparency
         self.info_text.setAlignment
         self.info_text.setAlignment(Qt.AlignBottom | Qt.AlignHCenter)
         
@@ -207,7 +207,7 @@ class AddItemWindow(QWidget):
         super().__init__()
         self.setWindowTitle('Add Items')
         self.setGeometry(500, 300, 800, 500)
-        self.set_background_image('cat.jpg')
+        self.set_background_image('bg.png')
         self.setWindowIcon(QIcon('add_item_icon.jpg'))  # Set window icon
 
         self.db = db
@@ -293,7 +293,7 @@ class ViewItemsWindow(QWidget):
         super().__init__()
         self.setWindowTitle('View Items')
         self.setGeometry(500, 300, 800, 500)
-        self.set_background_image('cat.jpg')
+        self.set_background_image('bg.png')
         self.setWindowIcon(QIcon('view_item_icon.jpg'))  # Set window icon
 
         self.db = db
@@ -396,7 +396,7 @@ class UpdateItemsWindow(QWidget):
         super().__init__()
         self.setWindowTitle('Update Items')
         self.setGeometry(500, 300, 800, 500)
-        self.set_background_image('cat.jpg')
+        self.set_background_image('bg.png')
         self.setWindowIcon(QIcon('update_icon.PNG'))  # Set window icon
 
         self.db = db
@@ -501,7 +501,7 @@ class RegistrationWindow(QWidget):
         super().__init__()
         self.setWindowTitle('Registration')
         self.setGeometry(500, 300, 800, 500)
-        self.set_background_image('cat.jpg')
+        self.set_background_image('bg.png')
         self.setWindowIcon(QIcon('registration_icon.jpg'))  # Set window icon
 
         self.db = db
